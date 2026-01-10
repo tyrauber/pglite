@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import { PGlite } from '@electric-sql/pglite-react-native'
+import { PGlite } from '@react-native-pglite/client'
 
 /*
  * PGlite React Native Test Suite

@@ -1,0 +1,46 @@
+
+
+> @electric-sql/pg-protocol@0.0.3 build /Users/tyrauber/Sites/react-native-pglite/vendor/pglite/packages/pg-protocol
+> tsup
+
+[34mCLI[39m Building entry: src/index.ts, src/messages.ts
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.5.1
+[34mCLI[39m Using tsup config: /Users/tyrauber/Sites/react-native-pglite/vendor/pglite/packages/pg-protocol/tsup.config.ts
+[34mCLI[39m Target: es2020
+[34mCLI[39m Cleaning output folder
+[34mCJS[39m Build start
+[34mESM[39m Build start
+[32mESM[39m [1mdist/chunk-REUDAHVV.js     [22m[32m3.53 KB[39m
+[32mESM[39m [1mdist/messages.js           [22m[32m893.00 B[39m
+[32mESM[39m [1mdist/index.js              [22m[32m9.80 KB[39m
+[32mESM[39m [1mdist/chunk-REUDAHVV.js.map [22m[32m11.66 KB[39m
+[32mESM[39m [1mdist/messages.js.map       [22m[32m71.00 B[39m
+[32mESM[39m [1mdist/index.js.map          [22m[32m45.75 KB[39m
+[32mESM[39m ⚡️ Build success in 14ms
+[32mCJS[39m [1mdist/index.cjs        [22m[32m13.25 KB[39m
+[32mCJS[39m [1mdist/messages.cjs     [22m[32m3.71 KB[39m
+[32mCJS[39m [1mdist/messages.cjs.map [22m[32m11.69 KB[39m
+[32mCJS[39m [1mdist/index.cjs.map    [22m[32m57.64 KB[39m
+[32mCJS[39m ⚡️ Build success in 14ms
+DTS Build start
+src/serializer.ts(38,44): error TS2345: Argument of type 'Uint8Array<ArrayBufferLike>' is not assignable to parameter of type 'ArrayBuffer'.
+  The types of 'slice(...)[Symbol.toStringTag]' are incompatible between these types.
+    Type '"Uint8Array"' is not assignable to type '"ArrayBuffer"'.
+src/serializer.ts(152,23): error TS2345: Argument of type 'ArrayBuffer | SharedArrayBuffer' is not assignable to parameter of type 'ArrayBuffer'.
+  Type 'SharedArrayBuffer' is not assignable to type 'ArrayBuffer'.
+    Types of property '[Symbol.toStringTag]' are incompatible.
+      Type '"SharedArrayBuffer"' is not assignable to type '"ArrayBuffer"'.
+src/serializer.ts(176,14): error TS2345: Argument of type 'Uint8Array<ArrayBufferLike>' is not assignable to parameter of type 'ArrayBuffer'.
+  The types of 'slice(...)[Symbol.toStringTag]' are incompatible between these types.
+    Type '"Uint8Array"' is not assignable to type '"ArrayBuffer"'.
+
+[31mError: error occurred in dts build
+    at Worker.<anonymous> (/Users/tyrauber/Sites/react-native-pglite/node_modules/tsup/dist/index.js:1545:26)
+    at Worker.emit (node:events:524:28)
+    at MessagePort.<anonymous> (node:internal/worker:268:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)[39m
+DTS Build error
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[43m[30m WARN [39m[49m  Local package.json exists, but node_modules missing, did you mean to install?
